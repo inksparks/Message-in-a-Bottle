@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message in a Bottle</title>
+  <style>
+    body {
+      background: url('msg.png.webp') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Georgia', serif;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p.clue {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .bottle {
+      font-size: 3rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bottle">🍾</div>
+    <h1>Message in a Bottle</h1>
+    <p class="clue">
+      "Listen closely to the tides. Sometimes, treasure appears where sound meets sight."
+    </p>
+    <audio controls>
+      <source src="message bottle.mp3" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <p>Can you uncover the secret message?</p>
+  </div>
+</body>
+</html>
